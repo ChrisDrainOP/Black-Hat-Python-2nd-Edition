@@ -5,7 +5,7 @@ import logging
 
 logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s -  %(levelname) s -  %(message)s')
 
-def ssh_command(ip, port, user, passwd, cmd):
+def ssh_command(ip, port, user, passwd, command):
     client = paramiko.SSHClient()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     client.connect(ip, port=port, username=user, password=passwd)
