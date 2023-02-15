@@ -11,8 +11,8 @@ def packet_callback(packet):
 
 def main():
     # fire up the sniffer
-    sniff(filter="tcp port 110 or tcp port 25 or tcp port 143", 
-            prn=packet_callback, stpre=0)
+    sniff(filter='tcp port 110 or tcp port 25 or tcp port 143',
+            prn=packet_callback, store=0)
 
 if __name__ == '__main__':
     main()
