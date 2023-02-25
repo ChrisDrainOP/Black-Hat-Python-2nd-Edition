@@ -5,8 +5,8 @@ import re
 import sys
 import zlib
 
-OUTDIR='~/Pictures'
-PCAPS='~/Pictures/PCAP Downloads'
+OUTDIR='./'
+PCAPS='./'
 
 Response = collections.namedtuple('Response', ['header','payload'])
 
