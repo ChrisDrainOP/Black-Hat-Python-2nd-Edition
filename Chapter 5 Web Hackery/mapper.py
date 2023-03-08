@@ -37,7 +37,7 @@ def chdir(path):
     finally:
         os.chdir(this_dir)
 
-    if __name__ == '__main__':
-        with chdir("/home/cruelly2436/Documents/bhp/wordpress"):
-            gather_paths()
-        input("Press return to continue.")
+if __name__ == '__main__':
+    with chdir("/home/cruelly2436/Documents/bhp/wordpress"):
+        gather_paths()
+    input("Press return to continue.")
